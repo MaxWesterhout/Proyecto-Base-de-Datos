@@ -1,0 +1,8 @@
+<div><a href="{% url 'index' %}">Go back</a></div>
+<form action="" method="post">
+	{% csrf_token %}
+	{{ player_name_form }}
+	<input type="submit" value="Submit" />
+</form>
+
+{{ results }}
